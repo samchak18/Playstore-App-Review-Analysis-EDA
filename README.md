@@ -8,13 +8,16 @@ This Project includes 1 colab notebook, 1 technical documentation as well as 1 p
 
 Executable Files:
 Play Store App Review Analysis - Includes all functions required for clustering operations.
+
 Output:
 Google Colab - All the outputs are visible in the provided colab notebook.
 Input Files:
 Play Store Data.csv - It contains the basic details of the app like number of user reviews, ratings, etc.
 User Reviews.csv - It contains the user reviews and its sentiment score for the respective app.
+
 Data Source:
 Dataset - Dataset taken from Almabetter
+
 -----------------------------------------------------
 
 📖 Introduction:
@@ -22,7 +25,9 @@ In today’s scenario we can see that mobile apps playing an important role in a
 
 -----------------------------------------------------
 
+
 The contents of Play Store Data are:
+
 App: It contains the name of the app with a short description (optional).
 Category: This section gives the category to which an app belongs. In this dataset, the apps are divided among 33 categories.
 Size: The disk space required to install the respective app.
@@ -42,9 +47,11 @@ Translated_Review: It contains the English translation of the review dropped by 
 Sentiment: It gives the attitude/emotion of the writer. It can be ‘Positive’, ‘Negative’, or ‘Neutral’.
 Sentiment_Polarity: It gives the polarity of the review. Its range is [-1,1], where 1 means ‘Positive statement’ and -1 means a ‘Negative statement’.
 Sentiment_Subjectivity: This value gives how close a reviewer’s opinion is to the opinion of the general public. Its range is [0,1]. Higher the subjectivity, closer is the reviewer’s opinion to the opinion of the general public, and lower subjectivity indicates the review is more of a factual information.
+
 -----------------------------------------------------
 
 📋Problem Statements
+
 What are the top categories on Play Store?
 Are majority of the apps Paid or Free?
 How importance is the rating of the application?
@@ -62,10 +69,13 @@ How Content Rating affect over the App?
 Does Last Update date has an effects on rating?
 Distribution of App update over the Year.
 Distribution of Paid and Free app updated over the Month.
+
 📔 What is Exploratory Data Analysis?
+
 Exploratory data analysis (EDA) is used by data scientists to analyze and investigate data sets for patterns, and anomalies (outliers), and form hypotheses based on our understanding of the dataset and summarize their main characteristics, often employing data visualization methods. It is an important step in any Data Analysis or Data Science project. It helps determine how best to manipulate data sources to get the answers you need.
 
 EDA involves generating summary statistics for numerical data in the dataset and creating various graphical representations to understand the data better and make it more attractive and appealing.
+
 
 The following are the various steps involved in the EDA process:
 
@@ -76,6 +86,7 @@ Bivariate Analysis - This analysis is related to cause and the relationship betw
 Multivariate Analysis - This is done when more than two variables have to be analyzed simultaneously.
 Data Cleaning - We shall clean the dataset and handle the missing data, outliers and categorical variables.
 Testing Hypothesis - We shall check if our data meets the assumptions required by most of the multivariate techniques.
+
 -----------------------------------------------------
 
 📖 Steps Involved
@@ -105,6 +116,7 @@ Installs
 We analysis the install column to observe the effect of size, price, rating, content rating, android version on app installation number. We can analysis that for each and every category number of app installation does not depend on the size. The free apps installed mostly. The apps which can be used by everyone is more installed than the apps which can be used by a particular age group. Rating of mostly installed apps is between 4 and 5.
 
 🛠 Challenges Faced:
+
 Reading the dataset and comprehending the problem statement. Our major challenge was data cleaning.
 Handling the error, duplicate and NaN values in the dataset.
 13.60% of reviews were NaN values, and even after merging both the dataframes, we could not infer much in order to fill them. Thus we had to drop them.
@@ -114,8 +126,11 @@ There is so much more which can be explored. Like we have current version, andro
 We can explore the correlation between the size of the app and the version of Android on the number of installs.
 Machine learning can help us to deploy more insights by developing models which can help us interpret even more better. We have left this as future work as this is something where we can work on.
 Designing multiple visualizations to summarize the information in the dataset and successfully communicate the results and trends to the reader.
+
 📋 Conclusion:
+
 Most of the apps are free so developers should focus on creating free apps to have a huge customer base. If developing paid apps then apps size should not be greater than 40mb. More Apps should be in the category like Events,Beauty,Parenting as they have not been explored much but still quite popular with huge installations. In order to retain the customer base apps should be updated regularly Developers should develop apps such that their content is available for everyone. Bulky apps should be developed in the category like Game, Family. If developing paid apps then its price should not be high and size should be less than 20mb. Apps belonging to Game and Family Category have high negative reviews therefore they should be developed carefully. Like this there can be a lot of conclusions but we have tried to cover the most important ones. These are some of the aspects that the developer should research before proceeding with the app development. By conducting a simple exploratory data analysis (EDA) on the play store dataset, we not only eliminate avoidable risks of failure, but we may also be able to provide better ideas for building the app.
+
 
 Percentage of free apps = ~92%
 Percentage of apps with no age restrictions = ~82%
@@ -131,12 +146,10 @@ The median size of all apps in the play store is 12 MB.
 The apps whose size varies with device has the highest number average app installs.
 The apps whose size is greater than 90 MB has the highest number of average user reviews, i.e., they are more popular than the rest.
 Helix Jump has the highest number of positive reviews and Angry Birds Classic has the highest number of negative reviews.
+
 -----------------------------------------------------
 
-💶 Credits
-Contact me for Data Science Project Collaborations
 
-GitHub LinkedIn
 
 -----------------------------------------------------
 
